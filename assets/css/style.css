@@ -1,0 +1,70 @@
+html{
+    background-color: white;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    flex-grow: 1;
+}
+
+/* Icone de l'utilisateur, toujours présente en haut a droite de toutes les pages */
+.userIcon{
+    background: url('https://api.iconify.design/bx/user-circle.svg?color=%23ff6f69') no-repeat center center / contain;
+    content: url('https://api.iconify.design/bx/user-circle.svg?color=%23ff6f69');
+    width: 12%;
+}
+
+/* Nav bar qui contient les 3 icones */
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    background-color: #ff6f69;
+    padding: 5% 0% 5% 0%;
+    width: 100%;
+}
+
+/* création d'un cercle autour de chaque composant de la nav bar */
+.cercle{
+    display: flex;
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Composant de la nav bar toujours présente en bas de la page */
+.recipeBook{
+    content: url('https://api.iconify.design/bx/book-content.svg?color=white');
+    width: 80%;
+}
+
+/* 2ème Composant de la nav bar toujours présente en bas de la page */
+.shoppingBasket{
+    content: url('https://api.iconify.design/el/shopping-cart.svg?color=white');
+    width: 80%;
+}
+
+/* 3ème Composant de la nav bar toujours présente en bas de la page */
+.calendar{
+    content: url('https://api.iconify.design/akar-icons/calendar.svg?color=white');
+    width: 80%;
+}
+
+/* a utiliser plus tard quand le search sera utilisé */
+/* .search{
+    background: url('https://api.iconify.design/fa/search.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/fa/search.svg');
+} */
